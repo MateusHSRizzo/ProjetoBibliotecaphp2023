@@ -10,13 +10,13 @@ class Conexao{
 
     public function __construct()
     {
-        die("A função init não é permitida")
+        die("A função init não é permitida");
     }
 
-    public static function conctar(){
+    public static function conectar(){
         if (self::$cont == null){
             try{
-                self::$cont = new PDO("mysql:host=". self::$dbhost .";dbname= " . $dbnome , self::$dbUsuario, self::$dbsenha)
+                self::$cont = new PDO("mysql:host=". self::$dbHost .";dbname= " . self::$dbNome , self::$dbUsuario, self::$dbSenha);
 
             }
             catch (PDOException $exception) {
