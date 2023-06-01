@@ -3,9 +3,9 @@
 use DAL\Conexao;
 
     include './DAL/conexao.php';
-    $sql = "select * from livros;";
-    $dal = new \dal\dalLivros();
-    $listalivros = $dal->Select();
+    $sql = "select * from editoras;";
+    $dal = new \dal\dalEditora();
+    $listaeditora = $dal->Select();
 ?>
 
 <!DOCTYPE html>
@@ -21,10 +21,10 @@ use DAL\Conexao;
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             
-    <title>Lista de Livros</title>
+    <title>Lista de Editoras</title>
 </head>
 <body>
-    <h1>Lista Livros Disponiveis Para Emprestimo</h1>
+    <h1>Lista de Editoras dos Livros Disponiveis</h1>
 
     <table class="striped green">
     <tr>

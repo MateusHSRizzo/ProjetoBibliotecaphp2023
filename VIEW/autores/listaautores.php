@@ -3,9 +3,9 @@
 use DAL\Conexao;
 
     include './DAL/conexao.php';
-    $sql = "select * from livros;";
-    $dal = new \dal\dalLivros();
-    $listalivros = $dal->Select();
+    $sql = "select * from autores;";
+    $dal = new \dal\dalAutores();
+    $listaautores = $dal->Select();
 ?>
 
 <!DOCTYPE html>
@@ -21,10 +21,10 @@ use DAL\Conexao;
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             
-    <title>Lista de Livros</title>
+    <title>Lista de Autores</title>
 </head>
 <body>
-    <h1>Lista Livros Disponiveis Para Emprestimo</h1>
+    <h1>Lista De Autores Dos Livros</h1>
 
     <table class="striped green">
     <tr>
@@ -39,10 +39,6 @@ use DAL\Conexao;
         <tr>
             <td><?php echo $livros->getcod();?></td>
             <td><?php echo $livros->getnome();?></td>
-            <td><?php echo $livros->getgenero();?></td>
-            <td><?php echo $livros->getdata_de_lancamento();?></td>
-            <td><?php echo $livros->getautor();?></td>
-            <td><?php echo $livros->geteditora();?></td>
         </tr>
     <?php
         }

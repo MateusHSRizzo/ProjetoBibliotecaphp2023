@@ -19,7 +19,10 @@
 
                 $livros->setcod($linha['cod']);
                 $livros->setnome($linha['nome']);
-
+                $livros->setgenero($linha['genero']);
+                $livros->setdata_de_lancamento($linha['data_de_lancamento']);
+                $livros->setautor($linha['autor']);
+                $livros->seteditora($linha['editora']);
                 $listalivros[] = $livros;
 
                 return $listalivros;

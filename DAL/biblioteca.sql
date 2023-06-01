@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29/05/2023 às 02:35
+-- Tempo de geração: 29/05/2023 às 15:48
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -45,9 +45,9 @@ CREATE TABLE `editoras` (
   `nome` varchar(45) NOT NULL,
   `rua` varchar(45) NOT NULL,
   `bairro` varchar(45) NOT NULL,
-  `CNPJ` varchar(18) NOT NULL,
+  `cnpj` varchar(18) NOT NULL,
   `Telefone` varchar(14) NOT NULL,
-  `E-Mail` varchar(60) NOT NULL,
+  `email` varchar(60) NOT NULL,
   `cidade` varchar(45) NOT NULL,
   `estado` varchar(45) NOT NULL,
   `pais` varchar(45) NOT NULL
@@ -79,7 +79,7 @@ CREATE TABLE `pessoas` (
   `nome` varchar(45) NOT NULL,
   `rua` varchar(45) NOT NULL,
   `bairro` varchar(45) NOT NULL,
-  `CPF` int(11) NOT NULL,
+  `cpf` int(11) NOT NULL,
   `Telefone` varchar(14) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_swedish_ci;
 
