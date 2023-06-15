@@ -5,7 +5,7 @@ use DAL\Conexao;
     include './DAL/conexao.php';
     $sql = "select * from editoras;";
     $dal = new \dal\dalEditora();
-    $listaeditora = $dal->Select();
+    $listalivros = $dal->Select();
 ?>
 
 <!DOCTYPE html>

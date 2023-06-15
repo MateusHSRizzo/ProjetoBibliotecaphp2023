@@ -1,6 +1,8 @@
 <?php 
     namespace DAL;
 
+use PDO;
+
 class Conexao{
     private static $dbNome = 'biblioteca';
     private static $dbHost = 'localhost';
@@ -17,8 +19,8 @@ class Conexao{
     public static function conectar(){
         if (self::$cont == null){
             try{
-                self::$cont = new \PDO("mysql:host=". self::$dbHost .";dbname= " . self::$dbNome , self::$dbUsuario, self::$dbSenha);
-
+                self::$cont = new \PDO("mysql:host=". self::$dbHost .";dbname=" . self::$dbNome, self::$dbUsuario, self::$dbSenha);
+                echo 'aqui';
             }
             catch (\PDOException $exception) {
                 die ($exception->getMessage());

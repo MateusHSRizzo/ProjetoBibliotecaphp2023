@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29/05/2023 às 15:48
+-- Tempo de geração: 15/06/2023 às 02:40
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -46,7 +46,7 @@ CREATE TABLE `editoras` (
   `rua` varchar(45) NOT NULL,
   `bairro` varchar(45) NOT NULL,
   `cnpj` varchar(18) NOT NULL,
-  `Telefone` varchar(14) NOT NULL,
+  `telefone` varchar(14) NOT NULL,
   `email` varchar(60) NOT NULL,
   `cidade` varchar(45) NOT NULL,
   `estado` varchar(45) NOT NULL,
@@ -83,6 +83,26 @@ CREATE TABLE `pessoas` (
   `Telefone` varchar(14) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_swedish_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `cod` int(11) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `senha` varchar(32) NOT NULL,
+  `usuario` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_swedish_ci;
+
+--
+-- Despejando dados para a tabela `usuario`
+--
+
+INSERT INTO `usuario` (`cod`, `email`, `senha`, `usuario`) VALUES
+(1, 'mateus@biblioteca.com.br', '81dc9bdb52d04dc20036dbd8313ed055', 'Mateus');
+
 --
 -- Índices para tabelas despejadas
 --
@@ -112,6 +132,12 @@ ALTER TABLE `pessoas`
   ADD PRIMARY KEY (`cod`);
 
 --
+-- Índices de tabela `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`cod`);
+
+--
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
@@ -138,6 +164,12 @@ ALTER TABLE `livros`
 --
 ALTER TABLE `pessoas`
   MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
