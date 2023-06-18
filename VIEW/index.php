@@ -23,17 +23,21 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="mySpxript.js"></script>
+<<<<<<< HEAD
     <style>
         .parallax-container {
             height: 43.7vmax;
         }
     </style>
+=======
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
 </head>
 
 <body>
 
     <div class="had-container">
 
+<<<<<<< HEAD
         <div class="parallax-container" style="background-color: lightgray; background-image: url(./src/fundo2.jpg); background-size: 100% 100%;">
             <div class="row"><br>
                 <div class="col m8 s8 offset-m2 offset-s2 center">
@@ -44,13 +48,31 @@
                                 <div class="row">
                                     <div class="input-field col m12 s12">
                                         <i class="material-icons prefix">group</i>
+=======
+        <div class="parallax-container logueo">
+            <div class="parallax"><img src="https://alistapart.com/d/438/fig-6--background-blend-mode.jpg"></div>
+            <div class="row"><br>
+                <div class="col m8 s8 offset-m2 offset-s2 center">
+                    <h4 class="truncate bg-card-user">
+                        <img src="../VIEW/imagens/fema.png" alt="" height="110">
+                        <div class="row login">
+                            <h4>Informe os seus dados de acesso!!!!</h4>
+                            <form method="POST" action="login.php" class="col s12">
+                                <div class="row">
+                                    <div class="input-field col m12 s12">
+                                        <i class="material-icons iconis prefix">account_box</i>
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
                                         <input id="icon_prefix" type="text" name="usuario" class="validate">
                                         <label for="icon_prefix">Usuário</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="input-field col m12 s12">
+<<<<<<< HEAD
                                         <i class="material-icons iconis prefix">lock</i>
+=======
+                                        <i class="material-icons iconis prefix">enhanced_encryption</i>
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
                                         <input id="password" type="password" name="senha" class="validate">
                                         <label for="password">Senha</label>
                                     </div>
@@ -66,9 +88,34 @@
         </div>
     </div>
 
+<<<<<<< HEAD
+=======
+    </div> <!-- fin del .container -->
+
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
     <?php include_once 'footer.php' ?>
 
 
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+
+<script>
+    $(document).ready(function() {
+        $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true, // Choose whether you can drag to open on touch screens,
+            onOpen: function(el) {
+                /* Do Stuff*/ }, // A function to be called when sideNav is opened
+            onClose: function(el) {
+                /* Do Stuff*/ }, // A function to be called when sideNav is closed
+        });
+        $('.parallax').parallax();
+    });
+</script>
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3

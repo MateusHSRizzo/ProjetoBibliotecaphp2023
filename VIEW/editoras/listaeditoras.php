@@ -1,9 +1,18 @@
 <?php
 
+<<<<<<< HEAD
     include_once 'C:\xampp\htdocs\ProjetoBibliotecaphp2023\BLL\BLL_Editora.php';
     $bll = new \BLL\bllEditora();
     $lsteditoras = $bll->Select();
 
+=======
+use DAL\Conexao;
+
+    include './DAL/conexao.php';
+    $sql = "select * from editoras;";
+    $dal = new \dal\dalEditora();
+    $listalivros = $dal->Select();
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +28,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             
+<<<<<<< HEAD
     <title>Lista de Livros</title>
 </head>
 <body>
@@ -55,6 +65,32 @@
         </tr>
     <?php
             }
+=======
+    <title>Lista de Editoras</title>
+</head>
+<body>
+    <h1>Lista de Editoras dos Livros Disponiveis</h1>
+
+    <table class="striped green">
+    <tr>
+        <th>COD</th>
+        <th>NOME</th>
+    </tr>
+
+    <?php
+        foreach($listalivro as $livros){
+
+    ?>
+        <tr>
+            <td><?php echo $livros->getcod();?></td>
+            <td><?php echo $livros->getnome();?></td>
+            <td><?php echo $livros->getgenero();?></td>
+            <td><?php echo $livros->getdata_de_lancamento();?></td>
+            <td><?php echo $livros->getautor();?></td>
+            <td><?php echo $livros->geteditora();?></td>
+        </tr>
+    <?php
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         }
     ?>
 

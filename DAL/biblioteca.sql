@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Tempo de geração: 18/06/2023 às 17:52
+=======
+-- Tempo de geração: 15/06/2023 às 02:40
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -107,9 +111,34 @@ CREATE TABLE `pessoas` (
   `nome` varchar(45) NOT NULL,
   `rua` varchar(45) NOT NULL,
   `bairro` varchar(45) NOT NULL,
+<<<<<<< HEAD
   `cpf` varchar(14) NOT NULL,
   `Telefone` varchar(15) NOT NULL
+=======
+  `cpf` int(11) NOT NULL,
+  `Telefone` varchar(14) NOT NULL
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_swedish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `cod` int(11) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `senha` varchar(32) NOT NULL,
+  `usuario` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_swedish_ci;
+
+--
+-- Despejando dados para a tabela `usuario`
+--
+
+INSERT INTO `usuario` (`cod`, `email`, `senha`, `usuario`) VALUES
+(1, 'mateus@biblioteca.com.br', '81dc9bdb52d04dc20036dbd8313ed055', 'Mateus');
 
 --
 -- Despejando dados para a tabela `pessoas`
@@ -201,7 +230,11 @@ ALTER TABLE `livros`
 -- AUTO_INCREMENT de tabela `pessoas`
 --
 ALTER TABLE `pessoas`
+<<<<<<< HEAD
   MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+=======
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT;
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
 
 --
 -- AUTO_INCREMENT de tabela `usuario`

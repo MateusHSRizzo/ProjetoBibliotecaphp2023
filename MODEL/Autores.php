@@ -23,9 +23,16 @@ class Autores {
         return $this->nome;
     }
 
+<<<<<<< HEAD
     public function setnome(string $nome){
         $this->nome = $nome;
     }
+=======
+    public function setnome(int $nome){
+        $this->nome = $nome;
+    }
+
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
 }
 
 ?>

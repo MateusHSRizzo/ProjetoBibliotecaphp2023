@@ -7,11 +7,19 @@ class Editora {
     private ?string $nome;
     private ?string $rua;
     private ?string $bairro;
+<<<<<<< HEAD
     private ?string $cnpj;
+=======
+    private ?int $cnpj;
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
     private ?string $telefone;
     private ?string $email;
     private ?string $cidade;
     private ?string $estado;
+<<<<<<< HEAD
+=======
+    private ?string $pais;
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
 
     public function __construct()
     {
@@ -30,7 +38,11 @@ class Editora {
         return $this->nome;
     }
 
+<<<<<<< HEAD
     public function setnome(string $nome){
+=======
+    public function setnome(int $nome){
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         $this->nome = $nome;
     }
 
@@ -38,11 +50,19 @@ class Editora {
         return $this->rua;
     }
 
+<<<<<<< HEAD
     public function setrua(string $rua){
         $this->rua = $rua;
     }
 
     public function setbairro(string $bairro){
+=======
+    public function setrua(int $rua){
+        $this->rua = $rua;
+    }
+
+    public function setbairro(int $bairro){
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         $this->bairro = $bairro;
     }
 
@@ -50,7 +70,11 @@ class Editora {
         return $this->bairro;
     }
 
+<<<<<<< HEAD
     public function setcnpj(string $cnpj){
+=======
+    public function setcnpj(int $cnpj){
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         $this->cnpj = $cnpj;
     }
 
@@ -58,7 +82,11 @@ class Editora {
         return $this->cnpj;
     }
 
+<<<<<<< HEAD
     public function settelefone(string $telefone){
+=======
+    public function settelefone(int $telefone){
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         $this->telefone = $telefone;
     }
 
@@ -66,7 +94,11 @@ class Editora {
         return $this->telefone;
     }
 
+<<<<<<< HEAD
     public function setemail(string $email){
+=======
+    public function setemail(int $email){
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         $this->email = $email;
     }
 
@@ -74,7 +106,11 @@ class Editora {
         return $this->email;
     }
 
+<<<<<<< HEAD
     public function setcidade(string $cidade){
+=======
+    public function setcidade(int $cidade){
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         $this->cidade = $cidade;
     }
 
@@ -82,13 +118,28 @@ class Editora {
         return $this->cidade;
     }
 
+<<<<<<< HEAD
     public function setestado(string $estado){
+=======
+    public function setestado(int $estado){
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         $this->estado = $estado;
     }
 
     public function getestado(){
         return $this->estado;
     }
+<<<<<<< HEAD
+=======
+
+    public function setpais(int $pais){
+        $this->pais = $pais;
+    }
+
+    public function getpais(){
+        return $this->pais;
+    }
+>>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
 }
 
 ?>
