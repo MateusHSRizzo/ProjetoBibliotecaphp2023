@@ -24,7 +24,6 @@
 
 <body>
     <nav>
-<<<<<<< HEAD
         <div class="nav-wrapper blue-grey darken-4">
             <a href="#" class="brand-logo right">
                 <img src="./src/trator.jpg"  width="50" height="65">
@@ -34,17 +33,6 @@
                 <li><a href="/ProjetoBibliotecaphp2023/VIEW/editoras/listaeditoras.php">Editora</a></li>
                 <li><a href="/ProjetoBibliotecaphp2023/VIEW/autores/listaautores.php">Autores</a></li>
                 <li><a href="/ProjetoBibliotecaphp2023/VIEW/pessoas/listapessoas.php">Clientes</a></li>
-=======
-        <div class="nav-wrapper brown darken-1">
-            <a href="#" class="brand-logo right">
-                <img src="../imagens/trator.jpg"  width="50" height="65">
-            </a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="\ProjetoBibliotecaphp2023\VIEW\operador\lstoperador2.php">Operador</a></li>
-                <li><a href="../operador/lstoperador2.php">Máquinas</a></li>
-                <li><a href="collapsible.html">Equipamentos</a></li>
-                <li><a href="/ProjetoBibliotecaphp2023/VIEW/area/lstarea.php">Area</a></li>
->>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
                 <li><a href="/ProjetoBibliotecaphp2023/VIEW/logout.php">Logout</a></li>
             </ul>
         </div>

@@ -20,10 +20,6 @@ class Conexao{
         if (self::$cont == null){
             try{
                 self::$cont = new \PDO("mysql:host=". self::$dbHost .";dbname=" . self::$dbNome, self::$dbUsuario, self::$dbSenha);
-<<<<<<< HEAD
-=======
-                echo 'aqui';
->>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
             }
             catch (\PDOException $exception) {
                 die ($exception->getMessage());

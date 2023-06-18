@@ -1,19 +1,12 @@
 <?php
     namespace DAL;
     include_once 'conexao.php';
-<<<<<<< HEAD
     include 'C:\xampp\htdocs\ProjetoBibliotecaphp2023\MODEL\Autores.php';
-=======
-    include '../MODEL/Autores.php';
->>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
 
     class dalAutores{
 
         public function Select(){
-<<<<<<< HEAD
             $listaautores = array();
-=======
->>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
             $sql = "select * from autores;";
 
             $con = Conexao::conectar();
@@ -27,14 +20,8 @@
                 $autores->setnome($linha['nome']);
                
                 $listaautores[] = $autores;
-<<<<<<< HEAD
             }
             return $listaautores;
-=======
-
-                return $listaautores;
-            }
->>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
 
         }
 
@@ -49,16 +36,8 @@
             $autores = new \MODEL\autores(); 
             $autores->setcod($linha['cod']);
             $autores->setnome($linha['nome']); 
-<<<<<<< HEAD
 
             return $autores; 
-=======
-         
-
-            return $autores; 
-
-
->>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         }
 
         public function Insert(\MODEL\Autores $autores){
@@ -69,14 +48,8 @@
      
             $result = $con->query($sql); 
             $con = Conexao::desconectar();
-<<<<<<< HEAD
 
             return $result; 
-=======
-            return $result; 
-
-
->>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         }
 
         public function Update(\MODEL\Autores $autores){
@@ -87,13 +60,8 @@
             $query = $pdo->prepare($sql);
             $result = $query->execute(array($autores->getnome()));
             $con = Conexao::desconectar();
-<<<<<<< HEAD
 
             return  $result; 
-=======
-            return  $result; 
-
->>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         }
 
         public function Delete(int $cod){
@@ -104,13 +72,8 @@
             $query = $pdo->prepare($sql);
             $result = $query->execute(array($cod));
             $con = Conexao::desconectar();
-<<<<<<< HEAD
 
             return  $result; 
-=======
-            return  $result; 
-
->>>>>>> e30f33d1883cf1fd03fee1439638bef7b7b10fb3
         }
     }
 
