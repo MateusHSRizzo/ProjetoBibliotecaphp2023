@@ -1,8 +1,8 @@
 <?php
 
-    include_once 'C:\xampp\htdocs\ProjetoBibliotecaphp2023\BLL\BLL_Livros.php';
-    $bll = new \BLL\bllLivros();
-    $lstlivros = $bll->Select();
+    include_once 'C:\xampp\htdocs\ProjetoBibliotecaphp2023\BLL\BLL_Pessoas.php';
+    $bll = new \BLL\bllPessoas();
+    $lstclientes = $bll->Select();
 
 ?>
 
@@ -23,35 +23,34 @@
 </head>
 <body>
     <?php include_once '../menu.php' ?>
-    <h1>Lista De Livros Disponiveis Para Emprestimo</h1>
+    <h1>Lista De Autores</h1>
 
     <table class="striped grey">
     <tr>
         <th>COD</th>
         <th>NOME</th>
-        <th>N. DE PAGINAS</th>
-        <th>ANO DE LANÇAMENTO</th>
-        <th>AUTOR</th>
-        <th>EDITORA</th>
+        <th>CPF</th>
+        <th>TELEFONE</th>
+        <th>RUA</th>
+        <th>BAIRRO</th>
     </tr>
 
     <?php
-    if($lstlivros != null){
-        foreach($lstlivros as $livro){  
+    if($lstclientes != null){
+        foreach($lstclientes as $cliente){  
     ?>
         <tr>
-            <td><?= $livro->getcod();?></td>
-            <td><?= $livro->getnome();?></td>
-            <td><?= $livro->getn_paginas();?></td>
-            <td><?= $livro->getdata_de_lancamento();?></td>
-            <td><?= $livro->getautor();?></td>
-            <td><?= $livro->geteditora();?></td>
+            <td><?= $cliente->getcod();?></td>
+            <td><?= $cliente->getnome();?></td>
+            <td><?= $cliente->getcpf();?></td>
+            <td><?= $cliente->gettelefone();?></td>
+            <td><?= $cliente->getrua();?></td>
+            <td><?= $cliente->getbairro();?></td>
         </tr>
     <?php
             }
         }
     ?>
-
     </table>
 </body>
 </html>

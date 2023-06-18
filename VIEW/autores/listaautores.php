@@ -1,8 +1,8 @@
 <?php
 
-    include_once 'C:\xampp\htdocs\ProjetoBibliotecaphp2023\BLL\BLL_Livros.php';
-    $bll = new \BLL\bllLivros();
-    $lstlivros = $bll->Select();
+    include_once 'C:\xampp\htdocs\ProjetoBibliotecaphp2023\BLL\BLL_Autores.php';
+    $bll = new \BLL\bllAutor();
+    $lstautores = $bll->Select();
 
 ?>
 
@@ -23,35 +23,26 @@
 </head>
 <body>
     <?php include_once '../menu.php' ?>
-    <h1>Lista De Livros Disponiveis Para Emprestimo</h1>
+    <h1>Lista De Autores</h1>
 
     <table class="striped grey">
     <tr>
         <th>COD</th>
         <th>NOME</th>
-        <th>N. DE PAGINAS</th>
-        <th>ANO DE LANÇAMENTO</th>
-        <th>AUTOR</th>
-        <th>EDITORA</th>
     </tr>
 
     <?php
-    if($lstlivros != null){
-        foreach($lstlivros as $livro){  
+    if($lstautores != null){
+        foreach($lstautores as $autor){  
     ?>
         <tr>
-            <td><?= $livro->getcod();?></td>
-            <td><?= $livro->getnome();?></td>
-            <td><?= $livro->getn_paginas();?></td>
-            <td><?= $livro->getdata_de_lancamento();?></td>
-            <td><?= $livro->getautor();?></td>
-            <td><?= $livro->geteditora();?></td>
+            <td><?= $autor->getcod();?></td>
+            <td><?= $autor->getnome();?></td>
         </tr>
     <?php
             }
         }
     ?>
-
     </table>
 </body>
 </html>
